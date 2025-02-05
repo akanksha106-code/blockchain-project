@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Explorer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Blockchain Explorer</h1>
+    </header>
+    <main>
+        <section id="add-block">
+            <h2>Add a New Block</h2>
+            <input type="text" id="block-data" placeholder="Enter block data">
+            <button id="add-block-btn">Add Block</button>
+        </section>
+        <section id="blockchain">
+            <h2>Blockchain</h2>
+            <div id="blockchain-container"></div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
